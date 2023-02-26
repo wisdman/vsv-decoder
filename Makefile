@@ -1,4 +1,4 @@
-NAME=vsv-encoder
+NAME=vsv-decoder
 VERSION=$(shell git tag -l --points-at HEAD)
 VERSION:=$(if $(VERSION),$(VERSION),"DEV")
 BUILD=$(shell git rev-parse --short HEAD)
