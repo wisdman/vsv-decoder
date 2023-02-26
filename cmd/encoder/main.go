@@ -17,7 +17,7 @@ var (
   build 	 = "unknown"
   date     = "unknown" 
   goVersion  = runtime.Version()
-  versionStr = fmt.Sprintf("%s v%s-%s %s %v", execName, version, build, date, goVersion)
+  versionStr = fmt.Sprintf("%s %s-%s %s %v", execName, version, build, date, goVersion)
 )
 
 func parseCLI() (sourcePath string, targetPath string) {
