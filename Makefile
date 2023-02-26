@@ -12,7 +12,7 @@ all:
 	GOOS=darwin  GOARCH=arm64 go build -tags release -ldflags $(LD_FLAGS) -o build/${NAME}-$(VERSION)-darwin-arm64      ./cmd/encoder
 	GOOS=linux   GOARCH=amd64 go build -tags release -ldflags $(LD_FLAGS) -o build/${NAME}-$(VERSION)-linux-amd64       ./cmd/encoder
 	GOOS=linux   GOARCH=arm64 go build -tags release -ldflags $(LD_FLAGS) -o build/${NAME}-$(VERSION)-linux-arm64       ./cmd/encoder
-	GOOS=windows GOARCH=amd64 go build -tags release -ldflags $(LD_FLAGS) -o build/${NAME}-$(VERSION)-windows-arm64.exe ./cmd/encoder
+	GOOS=windows GOARCH=amd64 go build -tags release -ldflags $(LD_FLAGS) -o build/${NAME}-$(VERSION)-windows-amd64.exe ./cmd/encoder
 	GOOS=windows GOARCH=arm64 go build -tags release -ldflags $(LD_FLAGS) -o build/${NAME}-$(VERSION)-windows-arm64.exe ./cmd/encoder
 	cd build; sha256sum * > sha256sums.txt
 
